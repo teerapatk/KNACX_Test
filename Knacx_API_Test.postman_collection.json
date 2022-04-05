@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "93fb1840-6a81-4a45-b1ea-7564c8c9f660",
+		"name": "Knacx_API_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "patient_id",
+							"value": "1745896582321",
+							"type": "text"
+						},
+						{
+							"key": "patient_name",
+							"value": "Wittawat",
+							"type": "text"
+						},
+						{
+							"key": "patient_lastname",
+							"value": "Chaisang",
+							"type": "text"
+						},
+						{
+							"key": "patient_age",
+							"value": "32",
+							"type": "text"
+						},
+						{
+							"key": "patient_phone",
+							"value": "0947564621",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/patients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patient/1143279563124",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/patient/1143279563124",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patient",
+						"1143279563124"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "patient_id",
+							"value": "1143279563124",
+							"type": "text"
+						},
+						{
+							"key": "patient_name",
+							"value": "Jonh",
+							"type": "text"
+						},
+						{
+							"key": "patient_lastname",
+							"value": "Smith",
+							"type": "text"
+						},
+						{
+							"key": "patient_age",
+							"value": "29",
+							"type": "text"
+						},
+						{
+							"key": "patient_phone",
+							"value": "0567956432",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "patient_id",
+							"value": "1745896582321",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"patient"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
